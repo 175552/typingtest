@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+#standard-margins {
+  margin-top: 3%;
+  margin-bottom: 3%
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,18 +19,22 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.start-button {
+  size: 10%;
 }
 
 @keyframes App-logo-spin {
