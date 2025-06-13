@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Quicksand:wght@400;600&display=swap');
+
+:root {
+  --bg: #fafafa;
+  --text: #222;
+  --accent: #00bfa6;  /* mint */
+  --accent-dark: #009e89;
+  --correct: #2ed636; /* green */
+  --incorrect: #d32f2f; /* red */
+  --neutral: #555;
+  --card-bg: #ffffff;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'JetBrains Mono', 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+}

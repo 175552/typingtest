@@ -1,40 +1,60 @@
+@import './template.css';
+
 .App {
   text-align: center;
+  background-color: var(--bg);
+  min-height: 100vh;
+  color: var(--text);
+  font-family: var(--font);
 }
 
+/* Logo margin */
 #standard-margins {
   margin-top: 3%;
-  margin-bottom: 3%
+  margin-bottom: 3%;
 }
 
+/* Animated Logo (optional) */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* App header */
 .App-header {
-  background-color: #ffffff;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 40px;
-  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+  padding: 2rem;
+  color: var(--text);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
+/* Start Button */
 .start-button {
-  size: 10%;
+  background-color: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  font-size: 1.2rem;
+  padding: 0.6rem 1.4rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.1s ease-in-out;
+}
+
+.start-button:hover {
+  background-color: var(--accent);
+  color: var(--bg);
+  transform: scale(1.05);
+}
+
+/* App link (optional) */
+.App-link {
+  color: var(--accent);
+  text-decoration: none;
 }
 
 @keyframes App-logo-spin {
